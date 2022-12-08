@@ -1,0 +1,4 @@
+flask_ngrok
+line-bot-sdk
+flask
+revChatGPT
