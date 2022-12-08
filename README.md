@@ -14,10 +14,6 @@ To use this chatbot, you will need to get your own LINE channel access token and
 3. Install the required packages, including ngrok if you want to use it.
 4. Run the script, which will start the Flask app and print a URL.
 5. Use a web browser to access the printed URL and interact with the chatbot via the LINE messaging platform.
-2. 請透過 chat.openai.com 取得 session cookie，並將它替換到程式碼中的相應位置。
-3. 安裝所需套件，如果你想使用 ngrok，也請一併安裝。
-3. 執行程式碼，它會啟動 Flask app 並輸出一個 URL。
-4. 使用瀏覽器存取輸出的 URL，並透過 LINE messaging platform 與聊天機器人互動。
 ## Notes
 - If you use ngrok, the printed URL will automatically be updated if the ngrok tunnel is restarted.
 - If you want to modify the way the chatbot responds, you can modify the parameters of the revChatGPT package.
