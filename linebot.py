@@ -1,29 +1,3 @@
-# ngrok-ssh
-# 在 Google 雲端硬碟建立資料夾
-from google.colab import drive
-drive.mount('/content/drive', force_remount=True)
-!mkdir -p /drive
-#umount /drive
-!mount --bind /content/drive/My\ Drive /drive
-!mkdir -p /drive/ngrok-ssh
-!mkdir -p ~/.ssh
-# 存取下載後的檔案
-!mkdir -p /drive/ngrok-ssh
-%cd /drive/ngrok-ssh
-!wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip -O ngrok-stable-linux-amd64.zip
-!unzip -u ngrok-stable-linux-amd64.zip
-!cp /drive/ngrok-ssh/ngrok /ngrok
-!chmod +x /ngrok
-
-!/ngrok authtoken _____YOUR_NGROK_TOKEN_____
-# Obtain API token here https://ngrok.com/
-
-!pip install flask_ngrok
-!pip install line-bot-sdk
-!pip install openai
-!pip install flask
-!pip3 install revChatGPT --upgrade
-
 from flask import Flask, request
 
 #待官方 API  出來前暫時棄用
